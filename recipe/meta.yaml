@@ -1,5 +1,5 @@
 {% set name = "pytest-mpi" %}
-{% set version = "0.3" %}
+{% set version = "0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 316e834a942af8b95c436306f4d71796409eeb8487de75293b4c93aadf27c3eb
+  sha256: 8879c82a9e837bdb49a1675858a13ef22e61e379c983fd37491f876c299b8b31
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Pytest plugin for working with MPI'
+  summary: Pytest plugin for working with MPI
   doc_url: https://pytest-mpi.readthedocs.io/
 
 extra:
