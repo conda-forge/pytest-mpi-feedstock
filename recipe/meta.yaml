@@ -1,5 +1,5 @@
 {% set name = "pytest-mpi" %}
-{% set version = "0.4" %}
+{% set version = "0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8879c82a9e837bdb49a1675858a13ef22e61e379c983fd37491f876c299b8b31
+  sha256: ad392f5cd3f72ed0aeb9bb9e6f77554d79f3b81f72e3526ba60ae34fc2d4359e
 
 build:
   noarch: python
